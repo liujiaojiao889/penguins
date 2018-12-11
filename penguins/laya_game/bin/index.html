@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>企鹅寻宝</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='full-screen' content='true' />
+    <meta name='screen-orientation' content='portrait' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='360-fullscreen' content='true' />
+    <meta http-equiv='expires' content='0' />
+</head>
+<script type="text/javascript">
+// var DEV_URL = 'http://yx81-wap.stg3.1768.com';
+var DEV_URL = 'http://76test20-wap.stg3.1768.com';
+var cdnpath = location.origin + '/bin/';
+var websocketurl = "https://nodejs-test.games.1768.com:8489/";
+var GM = {
+    userLogged: true,
+    gameId: 40080,
+    userId: 2037610954,
+    isCall_out: 1,
+    noticeStatus_out: function(cb) {
+        cb({
+            isShowNotice: true,
+            isShowRedPoint: true,
+        })
+    }
+};
+
+// 玩家id
+if(location.hash.slice(1) === '1'){
+    var userId = GM.user_id = "2037610954";
+    var token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIyMDM3NjEwOTU0IiwiZXhwIjoxNTIyMjAxMzg2fQ.oxqo-oKXLtu6pVAagl5VuStA6Kqy_WgEKQ64XRc3qkY";
+
+}else if(location.hash.slice(1) === '2'){
+    var userId = GM.user_id = "2037596532";
+    var token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIyMDM3NTk2NTMyIiwiZXhwIjoxNTIyMjA4NjEyfQ.JSimI7NHCj9djCFMyXg8WwdUReoYhRBPnXizZOFhIHg";
+}
+
+var gameId = parseInt("40080");
+var userId = parseInt("2037610954");
+var chargeToken = "oBcF1KkcB0yOwnmYNWOcuKT6qWoCKzTt0itgzpA1bCKuDtcEnLU1JymiNODV5H2MWb1LZ7jnXGMbSQnFVgyUOhwcfoOVzpNRKA9DlC0qOJc=";
+// var chargeToken = "kp7QAg6B+IgNsAsYUy52nibyuL5Gs5eKDbN7NWseQv4k7TRBBwoCwBfcqntE9orV5jCZ7UWs4TUEp7ighUIbOhovrH6AoCk28nQTDwmN4X4=";
+var tradeName = "企鹅寻宝";
+var gameOrderId = "e500b45d042980ba74eac6aaca7e5c6c";
+var gamehallAndroidBackUrl = "/?act=index";
+var staticVertion = '3';
+var GAME_VERSION = "3";
+
+//支付完成回调地址
+var redirect_uri = "/?act=game_polarhunter";
+//支付平台类型
+var platform = "";
+var publicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvMCkMUkh7AJqwUAecmgHZwQbiR4u7ZdOhuzoxZEhAZUjrBarfHvttwfKLFM1r2uXvuu2rrYKjpa1iUV2A4rLeHlPnT07IeelAFiUKbjOaqS1K1ByTjIFCz466B8bMRYIOA6Za5j4OcVaQvpgXWZicshHssLFCeYnj2f5XAYQFiS9It6lJ0gGJWT2YSD6WxMAV1JRCpLJE0rtV5egAqAp9UImsZDjE2mVHXCTjlQKsdi+8jRJatZFLwDqOU0RGlgmwcjdg6u511xWWaQX1G3IhSMRAjrY4FDxxYRKBGrkNBPAp34NodGWL1iEHD+GdR3wRvbIAnLNU0XDf2bEenMPzwIDAQAB";
+</script>
+
+<script type="text/javascript" src="../src/socket/zepto-1.1.6.js"></script>
+<script type="text/javascript" src="../src/socket/main.js"></script>
+<script type="text/javascript" src="../src/socket/polyfill.min.js"></script>
+
+<!-- 通信 -->
+<script type="text/javascript" src="../src/socket/jsencrypt.min.js"></script>
+<script type="text/javascript" src="../src/socket/crypto-js.js"></script>
+
+<!-- <script src="https://nodejs-dev.games.1768.com:7023/primus/primus.js?v=3"></script> -->
+<script src="https://nodejs-test.games.1768.com:8489/primus/primus.js?v=3"></script>
+<body>
+    <!-- laya core js start -->
+    <script type="text/javascript" src="libs/laya.core.js"></script>
+    <script type="text/javascript" src="libs/laya.webgl.js"></script>
+    <script type="text/javascript" src="libs/laya.ani.js"></script>
+    <script type="text/javascript" src="libs/laya.filter.js"></script>
+    <script type="text/javascript" src="libs/laya.ui.js"></script>
+    <!-- laya core js end -->
+    <!-- ui -->
+    <script type="text/javascript" src="../src/ui/layaUI.max.all.js"></script>
+    <!-- main -->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

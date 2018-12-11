@@ -1,0 +1,18 @@
+<res>
+   <item name="images/load/loadbar.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=9,22,15,21" picType="0"/>
+   <item name="images/font" type="" compress="0" pack="2" quality="80" props="" picType="0"/>
+   <item name="images/animate" type="" compress="0" pack="2" quality="80" props="" picType="0"/>
+   <item name="images/load/morebg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=18,19,24,19" picType="0"/>
+   <item name="images/room/set_bg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=32,22,27,25" picType="0"/>
+   <item name="images/room/auto_bg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=21,33,32,35" picType="0"/>
+   <item name="images/pop/rank/bg_rich2.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=10,15,12,16" picType="0"/>
+   <item name="images/pop/rank/bg_rich3.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=15,22,19,22" picType="0"/>
+   <item name="images/pop/recharge/bg_input.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=23,31,24,30" picType="0"/>
+   <item name="images/pop/help/bg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=42,47,116,43" picType="0"/>
+   <item name="images/pop/guide/dangban.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=21,27,25,29" picType="0"/>
+   <item name="images/pop/tips/bg_tips.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=69,76,74,99" picType="0"/>
+   <item name="images/pop/fudai/bg_01.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=28,35,28,35" picType="0"/>
+   <item name="images/pop/fudai/bg_02.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=18,30,18,30" picType="0"/>
+   <item name="images/room/txt_bg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=9,22,14,26" picType="0"/>
+   <item name="images/pop/rank/rank.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=8,9,12,8" picType="0"/>
+</res>
